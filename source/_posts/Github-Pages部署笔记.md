@@ -1,7 +1,7 @@
 ---
 title: Github Pages部署笔记
 date: 2018-11-28 12:14:16
-tags: git
+tags: [git]
 ---
 
 ## SSH Keys

@@ -1,6 +1,7 @@
 ---
 title: Hexo新手记录
 date: 2018-11-28 15:54:45
+categories: note
 tags:
 ---
 
@@ -63,11 +64,45 @@ hexo backup
 
 ## 更换主题(Next为例)
 
+### 基本配置
+
 项目目录下执行
 
 ```
-git clone https://github.com/iissnan/hexo-theme-next themes/next
+git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
+在`_config.yml`站点配置文件中，配置
+```
+theme:next
+language: zh-CN
+```
+
+### 支持标签
+
+```
+hexo new page tags 
+```
+
+md中tag写法
+
+```
+tags: [tag1,tag2]
+```
+
+`tags/index.md`中添加`type: "tags"`配置
+
+### 支持分类
+
+```
+ hexo new page categories
+```
+
+md中tag写法
+```
+categories: cate1
+```
+
+`categories/index.md`中添加`type: "categories"`配置
 
 
 ## 简写命令
@@ -85,3 +120,4 @@ hexo b
 [GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.](https://github.com/coneycode/hexo-git-backup)
 [does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub](https://github.com/coneycode/hexo-git-backup/issues/26)
 [Next主题](http://theme-next.iissnan.com/getting-started.html)
+[Next配置](https://www.jianshu.com/p/21c94eb7bcd1)
