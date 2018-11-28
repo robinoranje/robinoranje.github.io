@@ -80,3 +80,10 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:robinoranje/robinoranje.github.io.git
+
+# Backup
+## Docs: https://github.com/coneycode/hexo-git-backup
+backup:
+    type: git
+    repository:
+       github: git@github.com:robinoranje/robinoranje.github.io.git,source
