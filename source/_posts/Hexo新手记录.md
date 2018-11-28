@@ -104,10 +104,20 @@ categories: cate1
 
 `categories/index.md`中添加`type: "categories"`配置
 
+### 开启首页的tags和categories入口
+
+取消`/themes/next/_config.yml`中tags/categories相关注释
+
+### 首页字数显示限制
+
+将`/themes/next/_config.yml`的`auto_excerpt`设为true，并调整`length`值控制字数
+
 
 ## 简写命令
 
 ```
+hexo n <filename> //新建文章
+hexo s
 hexo g
 hexo d
 hexo b
@@ -119,5 +129,7 @@ hexo b
 [Hexo](https://hexo.io/zh-cn/)
 [GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.](https://github.com/coneycode/hexo-git-backup)
 [does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub](https://github.com/coneycode/hexo-git-backup/issues/26)
-[Next主题](http://theme-next.iissnan.com/getting-started.html)
+[Next主题5.*版](http://theme-next.iissnan.com/getting-started.html)
+[Next主题6.*版](https://github.com/theme-next/hexo-theme-next)
 [Next配置](https://www.jianshu.com/p/21c94eb7bcd1)
+
