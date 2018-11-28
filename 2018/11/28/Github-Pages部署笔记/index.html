@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="SSH Keys生成与添加Key12cd ~/.sshssh-keygen -t rsa -C “test@info.net” 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys 测试是否配置成功1ssh -T git@github.com 如果返回Hi username! You&amp;#39;ve successfully authenticated, but G">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-28T04:29:08.537Z">
+<meta property="og:updated_time" content="2018-11-28T07:24:48.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Pages部署笔记">
 <meta name="twitter:description" content="SSH Keys生成与添加Key12cd ~/.sshssh-keygen -t rsa -C “test@info.net” 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys 测试是否配置成功1ssh -T git@github.com 如果返回Hi username! You&amp;#39;ve successfully authenticated, but G">
@@ -95,7 +95,7 @@
 <p>仓库名需为 username.github.io<br>如果需要修改origin，可用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://github.com/xxxxxx/xxxx.git</span><br></pre></td></tr></table></figure></p>
 <p>命令</p>
 <h2 id="创建Pages"><a href="#创建Pages" class="headerlink" title="创建Pages"></a>创建Pages</h2><p>仓库对应的Setting中<code>GitHub Pages</code>编辑项，可修改主题等</p>
-<h2 id="使用Hexo主题"><a href="#使用Hexo主题" class="headerlink" title="使用Hexo主题"></a>使用Hexo主题</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="使用Hexo静态页面部署工具"><a href="#使用Hexo静态页面部署工具" class="headerlink" title="使用Hexo静态页面部署工具"></a>使用Hexo静态页面部署工具</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>自定义端口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure></p>
 <h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
@@ -103,12 +103,18 @@
 <p><code>_config.yml</code>文件中修改对应配置</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <p><a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">部署 | Hexo</a></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/tyyytcj/article/details/80880018" target="_blank" rel="noopener">使用GitHub.io当作自己的博客网站 - 看山 看水 看世界 - CSDN博客</a><br><a href="https://blog.csdn.net/u011475210/article/details/79023429" target="_blank" rel="noopener">我的个人博客之旅：从jekyll到hexo - WordZzzz - CSDN博客</a><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></p>
+<h3 id="备份源文件"><a href="#备份源文件" class="headerlink" title="备份源文件"></a>备份源文件</h3><p>可使用<code>hexo-git-backup</code>插件</p>
+<p>备份前，应建好相应备份分支，并将其设为默认分支</p>
+<p>如果报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: &apos;github&apos; does not appear to be a git repository</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure></p>
+<p>可以在blog目录中执行<code>git remote add</code>操作</p>
+<p>备份命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo backup</span><br></pre></td></tr></table></figure></p>
+<h3 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br><span class="line">hexo b</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/tyyytcj/article/details/80880018" target="_blank" rel="noopener">使用GitHub.io当作自己的博客网站 - 看山 看水 看世界 - CSDN博客</a><br><a href="https://blog.csdn.net/u011475210/article/details/79023429" target="_blank" rel="noopener">我的个人博客之旅：从jekyll到hexo - WordZzzz - CSDN博客</a><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a><br><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.</a><br><a href="https://github.com/coneycode/hexo-git-backup/issues/26" target="_blank" rel="noopener">does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/28/Github-Pages部署笔记/" data-id="cjp0u062r0000t4p16zuemzhz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/28/Github-Pages部署笔记/" data-id="cjp0ujahj0000wjp1waous95a" class="article-share-link">Share</a>
       
       
     </footer>
