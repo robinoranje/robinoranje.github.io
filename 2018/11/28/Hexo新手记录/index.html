@@ -108,25 +108,24 @@
 
 
 
-  <meta name="description" content="SSH Keys生成与添加Key12cd ~/.sshssh-keygen -t rsa -C “test@info.net” 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys 测试是否配置成功1ssh -T git@github.com 如果返回Hi username! You&amp;#39;ve successfully authenticated, but G">
-<meta name="keywords" content="git">
+  <meta name="description" content="初始化12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server 本地运行1hexo server 自定义端口1hexo server -p 5000 创建新文章1hexo new &amp;quot;My New Post&amp;quot; 部署(git)1npm install --save hexo-deployer-gi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github Pages部署笔记">
-<meta property="og:url" content="http://yoursite.com/2018/11/28/Github-Pages部署笔记/index.html">
+<meta property="og:title" content="Hexo新手记录">
+<meta property="og:url" content="http://yoursite.com/2018/11/28/Hexo新手记录/index.html">
 <meta property="og:site_name" content="Robin Web Dev">
-<meta property="og:description" content="SSH Keys生成与添加Key12cd ~/.sshssh-keygen -t rsa -C “test@info.net” 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys 测试是否配置成功1ssh -T git@github.com 如果返回Hi username! You&amp;#39;ve successfully authenticated, but G">
+<meta property="og:description" content="初始化12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server 本地运行1hexo server 自定义端口1hexo server -p 5000 创建新文章1hexo new &amp;quot;My New Post&amp;quot; 部署(git)1npm install --save hexo-deployer-gi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-28T08:17:44.842Z">
+<meta property="og:updated_time" content="2018-11-28T08:26:54.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github Pages部署笔记">
-<meta name="twitter:description" content="SSH Keys生成与添加Key12cd ~/.sshssh-keygen -t rsa -C “test@info.net” 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys 测试是否配置成功1ssh -T git@github.com 如果返回Hi username! You&amp;#39;ve successfully authenticated, but G">
+<meta name="twitter:title" content="Hexo新手记录">
+<meta name="twitter:description" content="初始化12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server 本地运行1hexo server 自定义端口1hexo server -p 5000 创建新文章1hexo new &amp;quot;My New Post&amp;quot; 部署(git)1npm install --save hexo-deployer-gi">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/28/Github-Pages部署笔记/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/28/Hexo新手记录/">
 
 
 
@@ -136,7 +135,7 @@
   };
 </script>
 
-  <title>Github Pages部署笔记 | Robin Web Dev</title>
+  <title>Hexo新手记录 | Robin Web Dev</title>
   
 
 
@@ -301,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/28/Github-Pages部署笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/28/Hexo新手记录/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Robin">
@@ -318,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Github Pages部署笔记
+          <h1 class="post-title" itemprop="name headline">Hexo新手记录
               
             
           </h1>
@@ -343,7 +342,7 @@
                 
               
 
-              <time title="创建时间：2018-11-28 12:14:16 / 修改时间：16:17:44" itemprop="dateCreated datePublished" datetime="2018-11-28T12:14:16+08:00">2018-11-28</time>
+              <time title="创建时间：2018-11-28 15:54:45 / 修改时间：16:26:54" itemprop="dateCreated datePublished" datetime="2018-11-28T15:54:45+08:00">2018-11-28</time>
             
 
             
@@ -353,6 +352,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -381,16 +398,31 @@
       
 
       
-        <h2 id="SSH-Keys"><a href="#SSH-Keys" class="headerlink" title="SSH Keys"></a>SSH Keys</h2><h3 id="生成与添加Key"><a href="#生成与添加Key" class="headerlink" title="生成与添加Key"></a>生成与添加Key</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C “test@info.net”</span><br></pre></td></tr></table></figure>
-<p>将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys</p>
-<h3 id="测试是否配置成功"><a href="#测试是否配置成功" class="headerlink" title="测试是否配置成功"></a>测试是否配置成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>如果返回<code>Hi username! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>说明成功</p>
-<p>如果不成功，可用<code>ssh -T -v git@github.com</code>查看报错详情</p>
-<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>按照提示初始化，关键命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;# blog&quot; &gt;&gt; README.md </span><br><span class="line">git add README.md </span><br><span class="line">git commit -m &apos;first commit&apos; </span><br><span class="line">git remote add origin git@github.com:xxxxxxx/xxxx.git</span><br></pre></td></tr></table></figure></p>
-<p>仓库名需为 username.github.io<br>如果需要修改origin，可用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://github.com/xxxxxx/xxxx.git</span><br></pre></td></tr></table></figure></p>
-<p>命令</p>
-<h2 id="创建Pages"><a href="#创建Pages" class="headerlink" title="创建Pages"></a>创建Pages</h2><p>仓库对应的Setting中<code>GitHub Pages</code>编辑项，可修改主题等</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/tyyytcj/article/details/80880018" target="_blank" rel="noopener">使用GitHub.io当作自己的博客网站 - 看山 看水 看世界 - CSDN博客</a></p>
+        <h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>自定义端口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure></p>
+<h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="部署-git"><a href="#部署-git" class="headerlink" title="部署(git)"></a>部署(git)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p><code>_config.yml</code>文件中修改对应配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">部署 | Hexo</a></p>
+<h2 id="备份源文件"><a href="#备份源文件" class="headerlink" title="备份源文件"></a>备份源文件</h2><p>可使用<code>hexo-git-backup</code>插件</p>
+<p>备份前，应建好相应备份分支，并将其设为默认分支</p>
+<p>如果报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: &apos;github&apos; does not appear to be a git repository</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure></p>
+<p>可以在blog目录中执行<code>git remote add</code>操作</p>
+<p>备份命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo backup</span><br></pre></td></tr></table></figure></p>
+<h2 id="更换主题-Next为例"><a href="#更换主题-Next为例" class="headerlink" title="更换主题(Next为例)"></a>更换主题(Next为例)</h2><h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3><p>项目目录下执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>在<code>_config.yml</code>站点配置文件中，配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theme:next</span><br><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure></p>
+<h3 id="支持标签"><a href="#支持标签" class="headerlink" title="支持标签"></a>支持标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>md中tag写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1,tag2]</span><br></pre></td></tr></table></figure>
+<p><code>tags/index.md</code>中添加<code>type: &quot;tags&quot;</code>配置</p>
+<h3 id="支持分类"><a href="#支持分类" class="headerlink" title="支持分类"></a>支持分类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>md中tag写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: cate1</span><br></pre></td></tr></table></figure></p>
+<p><code>categories/index.md</code>中添加<code>type: &quot;categories&quot;</code>配置</p>
+<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">hexo b</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/u011475210/article/details/79023429" target="_blank" rel="noopener">我的个人博客之旅：从jekyll到hexo - WordZzzz - CSDN博客</a><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a><br><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.</a><br><a href="https://github.com/coneycode/hexo-git-backup/issues/26" target="_blank" rel="noopener">does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next主题</a><br><a href="https://www.jianshu.com/p/21c94eb7bcd1" target="_blank" rel="noopener">Next配置</a></p>
 
       
     </div>
@@ -412,12 +444,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/git/" rel="tag"># git</a>
-          
-        </div>
-      
 
       
       
@@ -427,8 +453,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/28/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/11/28/Github-Pages部署笔记/" rel="next" title="Github Pages部署笔记">
+                <i class="fa fa-chevron-left"></i> Github Pages部署笔记
               </a>
             
           </div>
@@ -436,10 +462,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/28/Hexo新手记录/" rel="prev" title="Hexo新手记录">
-                Hexo新手记录 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -574,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-Keys"><span class="nav-number">1.</span> <span class="nav-text">SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成与添加Key"><span class="nav-number">1.1.</span> <span class="nav-text">生成与添加Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试是否配置成功"><span class="nav-number">1.2.</span> <span class="nav-text">测试是否配置成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Pages"><span class="nav-number">3.</span> <span class="nav-text">创建Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地运行"><span class="nav-number">2.</span> <span class="nav-text">本地运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新文章"><span class="nav-number">3.</span> <span class="nav-text">创建新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署-git"><span class="nav-number">4.</span> <span class="nav-text">部署(git)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备份源文件"><span class="nav-number">5.</span> <span class="nav-text">备份源文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换主题-Next为例"><span class="nav-number">6.</span> <span class="nav-text">更换主题(Next为例)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本配置"><span class="nav-number">6.1.</span> <span class="nav-text">基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持标签"><span class="nav-number">6.2.</span> <span class="nav-text">支持标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持分类"><span class="nav-number">6.3.</span> <span class="nav-text">支持分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简写命令"><span class="nav-number">7.</span> <span class="nav-text">简写命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">8.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
