@@ -109,12 +109,12 @@
 
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Robin Web Dev">
+<meta property="og:title" content="Robin">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Robin Web Dev">
+<meta property="og:site_name" content="Robin">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Robin Web Dev">
+<meta name="twitter:title" content="Robin">
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>Robin Web Dev</title>
+  <title>Robin</title>
   
 
 
@@ -192,7 +192,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Robin Web Dev</span>
+        <span class="site-title">Robin</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -229,6 +229,40 @@
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
         
@@ -306,7 +340,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Robin Web Dev">
+      <meta itemprop="name" content="Robin">
     </span>
 
     
@@ -342,7 +376,7 @@
                 
               
 
-              <time title="创建时间：2018-11-28 15:54:45 / 修改时间：16:26:54" itemprop="dateCreated datePublished" datetime="2018-11-28T15:54:45+08:00">2018-11-28</time>
+              <time title="创建时间：2018-11-28 15:54:45 / 修改时间：16:40:12" itemprop="dateCreated datePublished" datetime="2018-11-28T15:54:45+08:00">2018-11-28</time>
             
 
             
@@ -423,8 +457,10 @@
 <h3 id="支持分类"><a href="#支持分类" class="headerlink" title="支持分类"></a>支持分类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>md中tag写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: cate1</span><br></pre></td></tr></table></figure></p>
 <p><code>categories/index.md</code>中添加<code>type: &quot;categories&quot;</code>配置</p>
-<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">hexo b</span><br></pre></td></tr></table></figure>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/u011475210/article/details/79023429" target="_blank" rel="noopener">我的个人博客之旅：从jekyll到hexo - WordZzzz - CSDN博客</a><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a><br><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.</a><br><a href="https://github.com/coneycode/hexo-git-backup/issues/26" target="_blank" rel="noopener">does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next主题</a><br><a href="https://www.jianshu.com/p/21c94eb7bcd1" target="_blank" rel="noopener">Next配置</a></p>
+<h3 id="开启首页的tags和categories入口"><a href="#开启首页的tags和categories入口" class="headerlink" title="开启首页的tags和categories入口"></a>开启首页的tags和categories入口</h3><p>取消<code>/themes/next/_config.yml</code>中tags/categories相关注释</p>
+<h3 id="首页字数显示限制"><a href="#首页字数显示限制" class="headerlink" title="首页字数显示限制"></a>首页字数显示限制</h3><p>将<code>/themes/next/_config.yml</code>的<code>auto_excerpt</code>设为true，并调整<code>length</code>值控制字数</p>
+<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo n &lt;filename&gt; //新建文章</span><br><span class="line">hexo s</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">hexo b</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/u011475210/article/details/79023429" target="_blank" rel="noopener">我的个人博客之旅：从jekyll到hexo - WordZzzz - CSDN博客</a><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a><br><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">GitHub - coneycode/hexo-git-backup: you can use it to backup your blog into git.</a><br><a href="https://github.com/coneycode/hexo-git-backup/issues/26" target="_blank" rel="noopener">does not appear to be a git repository · Issue #26 · coneycode/hexo-git-backup · GitHub</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next主题5.*版</a><br><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next主题6.*版</a><br><a href="https://www.jianshu.com/p/21c94eb7bcd1" target="_blank" rel="noopener">Next配置</a></p>
 
           
         
@@ -490,7 +526,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Robin Web Dev">
+      <meta itemprop="name" content="Robin">
     </span>
 
     
@@ -641,7 +677,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Robin Web Dev">
+      <meta itemprop="name" content="Robin">
     </span>
 
     
