@@ -1,6 +1,7 @@
 ---
 title: Github Pages部署笔记
 date: 2018-11-28 12:14:16
+categories: note
 tags: [git]
 ---
 
@@ -12,6 +13,8 @@ ssh-keygen -t rsa -C “test@info.net”
 ```
 
 将id_rsa.pub文件中的内容添加到Github-Setting-SSH Keys
+
+<!-- more -->
 
 ### 测试是否配置成功
 ```

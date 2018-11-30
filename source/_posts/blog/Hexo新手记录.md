@@ -25,6 +25,8 @@ hexo server
 hexo server -p 5000
 ```
 
+<!-- more -->
+
 ## 创建新文章
 
 ```
@@ -108,19 +110,25 @@ categories: cate1
 
 取消`/themes/next/_config.yml`中tags/categories相关注释
 
-### 首页字数显示限制
-
-将`/themes/next/_config.yml`的`auto_excerpt`设为true，并调整`length`值控制字数
-
 
 ## 简写命令
 
 ```
 hexo n <filename> //新建文章
-hexo s
-hexo g
-hexo d
-hexo b
+hexo s //本地服务器
+hexo g //生成静态文件
+hexo d //部署到远程
+hexo b //备份源文件
+```
+
+## 代码高亮 
+
+\`\`\` [language] [title] [url] [link text]
+code snippet
+\`\`\`
+
+``` javascript app.js
+    console.log('Hello World');
 ```
 
 ## 参考
